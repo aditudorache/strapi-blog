@@ -1,17 +1,17 @@
 import React from 'react';
 import Strapi from 'strapi-sdk-javascript/build/main';
-const strapi = new Strapi('http://localhost:1337');
+const strapi = new Strapi('api');
 class Cms extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      posts: []
+      articles: []
     };
   }
   async componentDidMount() {
     try {
-      const posts = await strapi.getEntries('posts');
-      this.setState({ posts });
+      const articles = await strapi.getEntries('articles');
+      this.setState({ articles });
     } catch (err) {
       alert(err);
     }
@@ -19,10 +19,10 @@ class Cms extends React.Component {
   render() {
     return (
       <section>
-        {this.state.posts.map((post) => (
+        {this.state.articles.map((article) => (
           <article>
-            <div>Title: {post.title}</div>
-            <div>Content: {post.content}</div>
+            <div>{article.Title}</div>
+            <div>{article.Content}</div>
           </article>
       ))}
       </section>

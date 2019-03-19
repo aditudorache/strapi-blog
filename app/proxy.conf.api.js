@@ -1,7 +1,8 @@
 const PROXY_CONFIG =
   {
     '/api/*': {
-      target: 'http://acc.data.amsterdam.nl/signals',
+      target: 'https://enigmatic-cliffs-34872.herokuapp.com/',
+      // target: 'http://localhost:1337',
       pathRewrite: { '^/api/': '' },
       secure: false,
       changeOrigin: true,
