@@ -1,5 +1,6 @@
 import React from 'react';
 import Strapi from 'strapi-sdk-javascript/build/main';
+
 const strapi = new Strapi('api');
 class Cms extends React.Component {
   constructor(props) {
@@ -20,9 +21,10 @@ class Cms extends React.Component {
     return (
       <section>
         {this.state.articles.map((article) => (
-          <article>
-            <div>{article.Title}</div>
-            <div>{article.Content}</div>
+          <article className={'cms'}>
+            <img src={article.Image.url} alt={''} />
+            <h2>{article.Title}</h2>
+            <p>{article.Content}</p>
           </article>
       ))}
       </section>
