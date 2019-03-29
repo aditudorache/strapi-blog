@@ -19,12 +19,9 @@
     "eslint-plugin-react": "^7.7.0"
   },
   "dependencies": {
-    "knex": "latest",
     "lodash": "^4.17.5",
-    "sqlite3": "latest",
     "strapi": "3.0.0-alpha.24.1",
-    "strapi-hook-bookshelf": "3.0.0-alpha.24.1",
-    "strapi-hook-knex": "3.0.0-alpha.24.1"
+    "strapi-hook-mongoose": "^3.0.0-alpha.13"
   },
   "author": {
     "name": "A Strapi developer",
