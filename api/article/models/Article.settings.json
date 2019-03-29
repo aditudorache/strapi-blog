@@ -1,0 +1,35 @@
+{
+  "connection": "default",
+  "collectionName": "article",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "content": {
+      "default": "",
+      "type": "text"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "documents": {
+      "collection": "document",
+      "via": "article"
+    },
+    "documents-title": {
+      "default": "",
+      "type": "string"
+    }
+  }
+}

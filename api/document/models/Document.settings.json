@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "document",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "default": "",
+      "type": "string"
+    },
+    "url": {
+      "default": "",
+      "type": "string"
+    },
+    "article": {
+      "model": "article",
+      "via": "documents"
+    }
+  }
+}
