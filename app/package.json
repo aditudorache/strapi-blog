@@ -254,6 +254,7 @@
     "react-dom": "16.2.0",
     "react-intl": "2.3.0",
     "react-loadable": "4.0.3",
+    "react-marked-markdown": "^1.4.6",
     "react-reactive-form": "^1.0.28",
     "react-redux": "^5.0.7",
     "react-router-dom": "4.1.1",
