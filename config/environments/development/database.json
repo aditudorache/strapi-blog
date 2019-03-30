@@ -4,7 +4,7 @@
     "default": {
       "settings": {
         "client": "mongo",
-        "host": "testserver",
+        "host": "",
         "srv": false,
         "port": "27017",
         "database": "strapi",
@@ -12,7 +12,7 @@
         "password": ""
       },
       "options": {
-        "authenticationDatabase": "strapi",
+        "authenticationDatabase": "admin",
         "ssl": false
       },
       "connector": "strapi-hook-mongoose"
