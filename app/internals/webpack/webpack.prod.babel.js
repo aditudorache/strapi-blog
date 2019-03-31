@@ -14,6 +14,7 @@ module.exports = require('./webpack.base.babel')({
   output: {
     filename: '[name].[chunkhash].js',
     chunkFilename: '[name].[chunkhash].chunk.js',
+    publicPath: '/build/',
   },
 
   plugins: [
@@ -27,7 +28,7 @@ module.exports = require('./webpack.base.babel')({
 
     // Minify and optimize the index.html
     new HtmlWebpackPlugin({
-      template: 'src/index.html',
+      template: 'src/index.prod.html',
       minify: {
         removeComments: true,
         collapseWhitespace: true,
