@@ -33,7 +33,7 @@ class Cms extends React.Component {
           {this.state.articles.map((article) => (
             <div className={'cms'}>
               <div className="cms__image-header">
-                <img src={`${baseUrl}${article.image.url.substring(1)}`} alt={''} />
+                {article.image && <img src={`${baseUrl}${article.image.url.substring(1)}`} alt={''} />}
               </div>
               <div className="cms__title">
                 <h2>{article.title}</h2>

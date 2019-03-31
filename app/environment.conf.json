@@ -1,5 +1,5 @@
 {
-  "API_ROOT": "http://localhost:1337/",
-  "ROOT": "http://localhost:8001/",
+  "API_ROOT": "https://enigmatic-cliffs-34872.herokuapp.com/",
+  "ROOT": "http://localhost:3001/",
   "AUTH_ROOT": "https://acc.api.data.amsterdam.nl/"
 }
