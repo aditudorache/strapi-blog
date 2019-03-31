@@ -6,7 +6,8 @@
   "main": "./server.js",
   "scripts": {
     "setup": "cd admin && npm run setup",
-    "start": "node server.js",
+    "start": "node_modules/strapi/bin/strapi.js start",
+    "start:dev": "node server.js",
     "strapi": "node_modules/strapi/bin/strapi.js",
     "lint": "node_modules/.bin/eslint api/**/*.js config/**/*.js plugins/**/*.js",
     "preinstall": "npm cache verify",
