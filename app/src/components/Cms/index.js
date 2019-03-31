@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react';
 import { MarkdownPreview } from 'react-marked-markdown';
 import Strapi from 'strapi-sdk-javascript/build/main';
+import CONFIGURATION from 'shared/services/configuration/configuration';
+
+export const baseUrl = `${CONFIGURATION.API_ROOT}`;
 
 
 const documentLinks = (documents = []) => (<ul>
   {documents.map((d) => <li><a href={d.url}>{d.name}</a></li>)}
 </ul>);
 
-const strapi = new Strapi('api');
+const strapi = new Strapi(baseUrl);
 class Cms extends React.Component {
   constructor(props) {
     super(props);
@@ -28,13 +31,22 @@ class Cms extends React.Component {
       <Fragment>
         <section>
           {this.state.articles.map((article) => (
-            <article className={'cms'}>
-              <img src={article.image.url} alt={''} />
-              <h2>{article.title}</h2>
-              <MarkdownPreview value={article.content} />
-              {article['documents-title'] && <h2>{article['documents-title']}</h2>}
-              {documentLinks(article.documents)}
-            </article>
+            <div className={'cms'}>
+              <div className="cms__image-header">
+                <img src={`${baseUrl}${article.image.url.substring(1)}`} alt={''} />
+              </div>
+              <div className="cms__title">
+                <h2>{article.title}</h2>
+              </div>
+              <div>
+
+                <MarkdownPreview value={article.content} />
+              </div>
+              <div className="cms__documents">
+                {article['documents-title'] && <h2>{article['documents-title']}</h2>}
+                {documentLinks(article.documents)}
+              </div>
+            </div>
           ))}
         </section>
       </Fragment>
