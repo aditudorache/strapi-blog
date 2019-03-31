@@ -73,4 +73,9 @@ module.exports = require('./webpack.base.babel')({
   performance: {
     assetFilter: (assetFilename) => !(/(\.map$)|(^(main\.|favicon\.))/.test(assetFilename)),
   },
+
+  externals: {
+    globalConfig: JSON.stringify(require(path.resolve(process.cwd(),'environment.conf.prod.json'))), //eslint-disable-line
+  },
+
 });

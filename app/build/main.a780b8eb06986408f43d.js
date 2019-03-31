@@ -72049,7 +72049,7 @@ module.exports = __webpack_require__("./src/app.js");
 /***/ "globalConfig":
 /***/ (function(module, exports) {
 
-module.exports = {"API_ROOT":"http://localhost:1337/","ROOT":"http://localhost:8001/","AUTH_ROOT":"https://acc.api.data.amsterdam.nl/"};
+module.exports = {"API_ROOT":"https://enigmatic-cliffs-34872.herokuapp.com/","ROOT":"https://enigmatic-cliffs-34872.herokuapp.com/","AUTH_ROOT":"https://acc.api.data.amsterdam.nl/"};
 
 /***/ })
 

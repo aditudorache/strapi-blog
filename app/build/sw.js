@@ -79,13 +79,13 @@ var __wpo = {
     "efcfb177893ae065f43af6cbfc6ef4fca6592c04": "/0.21393d29e9e23d581260.chunk.js",
     "5322f5fd06a25374991fd9fdb4023154d8c5d012": "/1.46ff39aabe1be191b6f9.chunk.js",
     "6c5bb2ddc7d7b4b83bac8c4844271decc7cc45dc": "/2.143ce019527409ddb59b.chunk.js",
-    "c33e87eb8827592a635b64a9a2e337cb7455d1ed": "/main.a780b8eb06986408f43d.js",
+    "a7629e585a64bc387ff62d7027892f9258f01523": "/main.a780b8eb06986408f43d.js",
     "27f5b523db901556409ad6ebb154028df3ec1dc2": "/css/main.249f61286b3ec09c51cb58011d75cd94.css",
     "b0089f3dbc68e2822c95a0f2ec36566f21af2038": "/"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "31/03/2019, 13:42:16",
+  "version": "31/03/2019, 13:56:26",
   "name": "webpack-offline",
   "pluginVersion": "4.8.1",
   "relativePaths": false
