@@ -4,15 +4,15 @@
     "default": {
       "settings": {
         "client": "mongo",
-        "host": "",
-        "srv": false,
-        "port": "27017",
-        "database": "strapi",
-        "username": "",
-        "password": ""
+        "uri": "${process.env.DATABASE_URI || ''}",
+        "host": "${process.env.DATABASE_HOST || ''}",
+        "port": "${process.env.DATABASE_PORT || 27017}",
+        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "username": "${process.env.DATABASE_USERNAME || ''}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
       "options": {
-        "authenticationDatabase": "admin",
+        "authenticationDatabase": "${process.env.DATABASE_NAME || 'admin'}",
         "ssl": false
       },
       "connector": "strapi-hook-mongoose"
